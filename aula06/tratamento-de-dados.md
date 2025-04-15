@@ -1,13 +1,13 @@
 # Aula: Tratamento de Dados - 01/04/2025
 
 
-## Para exibir uma solicitação do nome do usuário ao abrir o site:
+## Para exibir uma solicitação de algo como nome do usuário ao abrir o site:
     window.prompt()
 
-## Para exibir uma mensagem:
+## Para exibir uma mensagem, como um aviso:
     window.alert()
 
-## É possível juntar isso a uma váriavel, exemplo:
+## É possível juntar isso a uma variável, exemplo:
     var nome = window.prompt('Qual é seu nome?')
 
 <!-- A variável 'nome', recebe 'window.prompt' -->
@@ -18,7 +18,7 @@
 - Após a var, podemos utilizar mais uma contatenação, com uma exclamação entre aspas, para complementar a frase, que ficará assim:
     <!-- É um grande prazer te conhecer, 'nome'! -->
 
-## Convertendo strings para números
+## Convertendo strings para number
 
 - Vamos supor que você queira fazer um cálculo usando as variáveis, exemplo:
     var n1 = window.prompt('Digite um número:')
@@ -39,7 +39,7 @@ ou
 - Ficando dessa forma:
     var n1 = Number.parseFloat(window.prompt('Digite um número:'))
 ou
-    var n1 = parseFloat(window.prompt('Digite um número:')) <!-- Sem o 'Number' -->
+    var n1 = parseFloat(window.prompt('Digite um número:')) <!-- Sem o 'Number' que também é possível -->
 
 ### Para encurtar esse processo:
 
