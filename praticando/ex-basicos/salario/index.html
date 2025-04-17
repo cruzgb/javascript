@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário Aleatório</title>
+</head>
+<body>
+    <script>
+        var nome = prompt('Digite seu nome:')
+        var salario = Math.floor(Math.random() * (4950 - 1650 + 1)) + 1650 // Gera um número aleatório de 1-3 salários.
+
+        var salarioCur = salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) // Coloca em valor de moeda brasileira.
+        
+        alert(`${nome}, seu salário é: ${salarioCur} 💸`)
+    </script>
+</body>
+</html>
