@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome? 👨🏽‍💻')
+        var salarioD = window.prompt('Quanto você recebe por dia? 💸')
+        
+        var diasT = Math.floor(Math.random() *(22 - 21 + 1) + 21)
+        var salarioCur = salarioD.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        var salarioF = salarioCur * diasT
+
+        window.alert(`Se você trabalha ${diasT} dias, você recebe: ${salarioF} por mês. 💰`)
+    </script>
+</body>
+</html>
