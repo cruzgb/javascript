@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerte o número</title>
+</head>
+<body>
+    <script>
+        window.alert(`Tente acertar um número de 1 a 10! 🎲`)
+        var numero_al = Math.floor(Math.random() *(10 - 1 + 1)) + 1
+
+        var numero_es = Number( window.prompt(`E aí, em qual número você pensou? 🤔`))
+
+
+        var resultado = numero_es == numero_al? window.alert(`Você acertou!🏆 `) : numero_es >= numero_al ? window.alert(`Muito alto! Tente um número menor. 🔼`) : window.alert(`Muito baixo! Tente um número maior. 🔽`)
+
+        window.alert(`O número era: ${numero_al} 🎯`)
+    </script>
+</body>
+</html>
