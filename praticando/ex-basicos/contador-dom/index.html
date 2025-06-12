@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="caixaF">
+        <main id="container">
+            <div id="menos">
+                <img src="seta1.png" alt="seta">
+            </div>
+            <div id="numero">
+                <p id="num">0</p>
+            </div>
+            <div id="mais">
+                <img src="seta.png" alt="seta">
+            </div>
+        </main>
+        <div id="resetar">
+            <p>Resetar</p>
+        </div>
+    </div>
+
+    <script>
+        var btmenos = document.querySelector('#menos')
+        var btmais = document.querySelector('#mais')
+        var num = document.getElementById('num')
+        var btreset = document.querySelector('#resetar')
+
+        btmenos.addEventListener('click', clicar)
+        btmenos.addEventListener('mouseout', sair)
+        btmais.addEventListener('click', clicar1)
+        btmais.addEventListener('mouseout', sair1)
+        btreset.addEventListener('click', clicar2)
+        btreset.addEventListener('mouseout', sair2)
+
+
+        function clicar() {
+            btmenos.style.background = 'red'
+            var valorAtual = Number(num.innerText)
+            num.innerText = valorAtual - 1
+        }
+
+        function sair() {
+            btmenos.style.background = 'darkred'
+        }
+
+        function clicar1() {
+            btmais.style.background = 'greenyellow'
+            var valoratual = Number(num.innerText)
+            num.innerText = valoratual + 1
+        }
+
+        function sair1() {
+            btmais.style.background = 'green'
+        }
+
+        function clicar2() {
+            btreset.style.background = '#a37b3e'
+            var Valoratual = Number(num.innerText)
+            num.innerText = 0
+        }
+
+        function sair2() {
+            btreset.style.background = '#df9f41'
+        }
+    </script>
+</body>
+
+</html>
